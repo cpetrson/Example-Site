@@ -1,0 +1,95 @@
+/* Variables */
+
+iframe {
+  border: 2px solid slategray;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  width: 100%; 
+  
+}
+.myframe{
+  border: 2px solid slategray;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  width: 100%; 
+  height: 50vh;
+  overflow: hidden;
+  
+}
+.myframe img{
+  border: 2px solid slategray;
+  width: 100%;
+}
+
+.mypurple {
+  background-color: hsl(300, 76%, 72%);
+}
+.myorange {
+  background-color: rgb(252.5933609959, 196.2780082988, 141.4066390041); /* Fallback Color */
+  border: 1px solid #ec7705;
+}
+.myyellow {
+  background-color: rgb(253, 242, 72);
+  border: 1px solid rgb(159,139,26);
+}
+.myblue {
+  background-color: rgb(0,122,204);
+}
+.myx {
+  background-color: slategray;
+}
+
+.btn-a, .btn-b, .btn-p, .btn-o, .btn-y, .btn-x {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 10vw;
+}
+.btn-y {
+  background-color: rgb(253, 242, 72); /* Fallback Color */
+  background-color: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(253, 242, 72)));
+  background-image: -webkit-linear-gradient(top, white, rgb(253, 242, 72)); /* Chrome 10 */
+  background-image: -moz-linear-gradient(top, white, rgb(253, 242, 72)); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white, rgb(253, 242, 72)); /* IE10 */
+  background-image: -o-linear-gradient(top, white, rgb(253, 242, 72)); /* Opera 11. */
+  background-image: linear-gradient(to bottom, white, rgb(253, 242, 72));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=white, EndColorStr=rgb(253, 242, 72));
+}
+
+.btn-o {
+  background-color: rgb(252.5933609959, 196.2780082988, 141.4066390041); /* Fallback Color */
+  background-color: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(252.5933609959, 196.2780082988, 141.4066390041)));
+  background-image: -webkit-linear-gradient(top, white, rgb(252.5933609959, 196.2780082988, 141.4066390041)); /* Chrome 10 */
+  background-image: -moz-linear-gradient(top, white, rgb(252.5933609959, 196.2780082988, 141.4066390041)); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white, rgb(252.5933609959, 196.2780082988, 141.4066390041)); /* IE10 */
+  background-image: -o-linear-gradient(top, white, rgb(252.5933609959, 196.2780082988, 141.4066390041)); /* Opera 11. */
+  background-image: linear-gradient(to bottom, white, rgb(252.5933609959, 196.2780082988, 141.4066390041));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=white, EndColorStr=rgb(252.5933609959, 196.2780082988, 141.4066390041));
+}
+
+.btn-p {
+  background-color: rgb(175, 139, 247); /* Fallback Color */
+  background-color: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(175, 139, 247)));
+  background-image: -webkit-linear-gradient(top, white, rgb(175, 139, 247)); /* Chrome 10 */
+  background-image: -moz-linear-gradient(top, white, rgb(175, 139, 247)); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white, rgb(175, 139, 247)); /* IE10 */
+  background-image: -o-linear-gradient(top, white, rgb(175, 139, 247)); /* Opera 11. */
+  background-image: linear-gradient(to bottom, white, rgb(175, 139, 247));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=white, EndColorStr=rgb(175, 139, 247));
+}
+
+.btn-b {
+  background-color: rgb(0, 122, 204); /* Fallback Color */
+  background-color: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(0, 122 204)));
+  background-image: -webkit-linear-gradient(top, white, rgb(0,122,204)); /* Chrome 10 */
+  background-image: -moz-linear-gradient(top, white, rgb(0, 122, 204)); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white, rgb(0, 122, 204)); /* IE10 */
+  background-image: -o-linear-gradient(top, white, rgb(0, 122, 204)); /* Opera 11. */
+  background-image: linear-gradient(to bottom, white, rgb(0, 122, 204));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=white, EndColorStr=rgb(0, 122, 204));
+}

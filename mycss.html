@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | CSS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="css/mycss.css">
+  </head>
+  <body>
+    <div class="page-container">
+      
+    <div class="my-bg-photo bg-secondary text-white py-5 text-center shadow">
+      <h1 class="display-4">Project: CSS</h1>
+      <p class="lead mb-0">Exploring the power of style.</p>
+    </div>
+
+    <div class="container my-custom-container pt-3"> <!-- padding-top: 3rem -->
+      <nav class="mb-3">
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wp.html">WordPress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="woo.html">WooCommerce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mylamp.html">LAMP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CSS</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="row text-center">
+        <h1>CSS - Cascading Style Sheets</h1>
+        <h2>Stylish and Responsive Design</h2>
+        <p>Fall 2024 - present</p>
+        <p class="text-left">Wanting to brush up my CSS Skills, I picked up Brad Schiff's udemy tutorial on HTML & CSS (see below).  Although I had been working with HTML and CSS in various projects, I wanted to see what he could show me that I didn't already know.  This tutorial is a fantastic place to start for anyone interested in working with front-end development.  While it doesn't require programming know-how, Schiff sets the stage for Javascript and why it is the third member of the 'happy family' along with HTML and CSS. Here are some highlights from that tutorial:</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12 mb-12 mb-md-0">
+          <div id="myframe" class="myframe">
+            <div id="little-header" class="my-bg-photo bg-secondary text-white py-1 text-center shadow">
+              <h1 id="l-h-title" class="display-4">CSS Effects</h1>
+              <p id="l-h-subtitle" class="lead mb-0">Exploring the power of style.</p>
+            </div>
+            <img id="my-img" src="images/IMG_5622.jpg"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae, cumque necessitatibus odio vitae nisi sunt maiores, perspiciatis tempora odit aperiam, quidem magnam sit animi similique dolores minus et quia?</p>
+          </div> <!-- /myframe -->
+            
+          <button id="btn-p" class="btn-p mypurple" onclick="myFunctionP()">Purple</button>
+          <button class="btn-y myyellow" onclick="myFunctionY()">Yellow</button>
+          <button class="btn-o myorange" onclick="myFunctionO()">Orange</button> 
+          <button class="btn-b myblue" onclick="myFunctionB()">Blue</button>
+          <!--button class="btn-x myx" onclick="myFunctionX()">Gray</button-->
+
+        </div>  
+      </div>   <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-12 mb-12 mb-md-0">
+          <h2>Project:</h2>
+          <p>This tutorial covers so many fun things, including Bootstrap, Sass, and pushing your website up onto GitHub's hosting for free.  Wish I had found this years ago!</p>
+          
+          <h2>Resources:</h2>
+          <ul>
+            <li>Brad Schiff's udemy.com tutorial: "Web Design for Beginners: Real World Coding in HTML & CSS"</li>
+
+          </ul>
+        </div>      
+      </div> <!-- /row -->
+      
+    </div>
+    
+
+    <footer class="border-top mt-5 py-4 text-center text-muted small">
+      <p>&copy; 2025 cpetrson</p>
+    </footer>
+
+  </div> <!-- /page-container -->
+
+    <!-- JavaScript and dependencies -->
+    <script>
+    
+    /* Style contents with Purple   */
+    function myFunctionP() {
+      var f = document.getElementById("myframe");
+      var i = document.getElementById("my-img");
+      document.getElementById("my-img").src="images/IMG_5892cropped.jpg";
+    }
+    
+    /* Style contents with Yellow   */
+    function myFunctionY() {
+      document.getElementById("my-img").src="images/IMG_5900cropped.jpg";
+    }
+    
+    /* Style contents with Orange   */
+    function myFunctionO() {
+      document.getElementById("my-img").src="images/IMG_1387.jpg";
+    }
+    
+    /* Style contents with Blue   */
+    function myFunctionB() {
+      document.getElementById("my-img").src="images/IMG_5622.jpg";
+    }
+    
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
