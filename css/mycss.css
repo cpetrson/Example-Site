@@ -21,6 +21,19 @@ iframe {
   width: 100%;
 }
 
+.imgframe{
+  //border: 2px solid slategray;
+  //border-radius: 7px;
+  margin-bottom: 5px;
+  width: 100%; 
+  overflow: hidden;
+  
+}
+.imgframe img{
+  //border: 2px solid slategray;
+  width: 100%;
+}
+
 .mypurple {
   background-color: hsl(300, 76%, 72%);
 }
