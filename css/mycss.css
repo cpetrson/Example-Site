@@ -22,15 +22,12 @@ iframe {
 }
 
 .imgframe{
-  //border: 2px solid slategray;
-  //border-radius: 7px;
   margin-bottom: 5px;
   width: 100%; 
   overflow: hidden;
   
 }
 .imgframe img{
-  //border: 2px solid slategray;
   width: 100%;
 }
 
