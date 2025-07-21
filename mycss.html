@@ -6,6 +6,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="css/mycss.css">
+
+    <style>
+
+      /* Images */
+      .img-basic {width: 400px; border: 1px solid black;}
+
+      /* Animation for bounce (and spin on hover) */
+      @keyframes fadeBounce {
+        0% { opacity: 0; transform: translateY(-200%); }
+        40% {
+          
+          transform: translateY(0);
+        }
+
+        55% {
+          transform: translateY(-6px);
+        } 
+        70% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        85% {
+          transform: translateY(-3px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+      }
+      .box-z-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
+      }
+      .box-z {
+        animation-name: fadeBounce;
+        animation-duration: 1s;
+        background-color: #e7eff5;
+        padding: 0 20px 0 20px;
+        border: 2px solid #d3dee7;
+        margin-bottom: 30px;
+        box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .10);
+        border-radius: 10px;
+
+        transition:
+        rotate 2s;
+      }
+      .box-z:hover {
+        rotate: 180deg;
+      }
+
+      /* End Bounce/Spin Animation */
+
+    </style>
+
+
   </head>
   <body>
     <div class="page-container">
@@ -49,57 +107,115 @@
         <h1>CSS - Cascading Style Sheets</h1>
         <h2>Stylish and Responsive Design</h2>
         <p>Fall 2024 - present</p>
-        <p class="text-left">Recently I picked up Brad Schiff's Udemy tutorial on HTML & CSS (see below).  This tutorial covers so many fun things, including Bootstrap, Sass, and pushing a website up onto GitHub's hosting for free.  There is also a thorough example of mobile-first classes with standard breakpoints for responsive design.  Here are some highlights from that tutorial.  </p>
-        
-      </div>
+        <p class="text-left">Recently I picked up <a href="https://udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css">Brad Schiff's Udemy tutorial on HTML & CSS</a>.  This tutorial covers so many fun things, including Bootstrap, Sass, and pushing a website up onto GitHub's hosting for free. </p>
+        <p class="text-left"> There is also a thorough example of mobile-first classes with standard breakpoints for responsive design as well as many page layouts demonstrating common techniques such as flexbox and css grids.</p>  
+        <p><img class="img-basic" src="./images/clean modern look on about page.jpg" alt="Standard page with sidebar"></p>
       
-      <div class="row">
-        <div class="col-md-12 mb-12 mb-md-0">
-          <h3>One photo & palette. Different navigational styles.</h3>
-
-          <img src="images/header_home.jpg" class="img-fluid mb-4 border border-secondary" alt="Home page nav header">
-          <img src="images/header_about.jpg" class="img-fluid mb-4 border border-secondary" alt="About page nav header">
-          <img src="images/header_faq.jpg" class="img-fluid mb-4 border border-secondary" alt="FAQ page nav header">
-          <img src="images/header_links.jpg" class="img-fluid mb-4 border border-secondary" alt="Links page nav header">
-          <img src="images/header_contact-us.jpg" class="img-fluid mb-4 border border-secondary" alt="Contact Us page nav header">
-          <img src="images/header_box-model.jpg" class="img-fluid mb-4 border border-secondary" alt="Box Model page nav header">
-          <img src="images/header_responsive.jpg" class="img-fluid mb-4 border border-secondary" alt="Responsive page nav header">
-
-          <p>As I stepped through Schiff's tutorial, I wanted to try the concepts out in my own workspace.  Taking an original photo of apple blossoms as a starting point, I used it as the base for working with the different styles the tutorial was demonstrating.  A palette 'grew' from the photo, as did the sample pages as I experimented with different style elements.</p>
-        </div>
+        <p>Read on for more highlights!</p>
+      
       </div>
+          
 
-      <div class="row">
-        <div class="col-md-12 mb-12 mb-md-0">
-          <h3>CSS/Javascript Effects</h3>
-          <div id="myframe" class="myframe">
-            <div id="little-header" class="my-bg-photo bg-secondary text-white py-1 text-center shadow">
-              <p id="l-h-subtitle" class="lead mb-0">Exploring the power of style.</p>
-              <p>From CSS shading and image fitting, to the javascript that powers flexibility.</p>
-            </div>
-            <img id="my-img" src="images/IMG_5622.jpg"/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae, cumque necessitatibus odio vitae nisi sunt maiores, perspiciatis tempora odit aperiam, quidem magnam sit animi similique dolores minus et quia?</p>
-          </div> <!-- /myframe -->
+          <hr>
+          <div>
+            <h1>Tutorial Review </h1><h2><a href="https://udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css">Web Design for Beginners: Real World Coding in HMTL & CSS</a></h2>
+              <p>Brad Schiff's HTML & CSS Tutorial on Udemy.com</p>
+
+            <h3>Audience</h3>
+              <p>Are you a developer looking for a good HTML/CSS tutorial to make sure you've covered your bases?</p>
+
+              <p>If you're like me, you've worked with some HTML and CSS, and even created PHP templates as a web developer, but may wish you had a comprehensive introduction so that you <em>know</em> that you know (and making pages like the one above is straightforward).  <a href="https://udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css">Brad Schiff's tutorial</a> checks all the boxes.  In this independent review I'll walk you through some highlights!</p>
+              
+
+              <h2>Outline</h2>
+            <ul>
+              <li><a href="#1">Quick Facts</a></li>
+              <li><a href="#2">Requirements</a></li>
+              <li><a href="#3">Some of My Favorite Aspects</a></li>
+              <li><a href="#4">Development Environment & Tools</a></li>
+              <li><a href="#5">Working with Images and Overlapping Content</a></li>
+              <li><a href="#6">Vector Graphics (Figma) & Gradients</a></li>
+              <li><a href="#7">Responsive Design</a></li>
+              <li><a href="#8">CSS Flexbox and Grid</a></li>
+              <li><a href="#9">CSS Transitions & Animations</a></li>
+              <li><a href="#10">Bootstrap</a></li>
+              <li><a href="#11">Sass</a></li>
+              <li><a href="#12">GitHub and GitHub Pages</a></li>
+              <li><a href="#13">Conclusion</a></li>
+            </ul>
+
+            <h3 id="qf">Quick Facts:</h3>
+            <ul>
+              <li>Title: <a href="https://udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css">Web Design for Beginners: Real World Coding in HMTL & CSS</a></li>
+              <li>Author: Brad Schiff</li>
+              <li>Source: udemy.com</li>
+              <li>Time: 11.5 hrs</li>
+              <li>Lessons: 74 Lectures</li>
+              <li>Level: All Levels</li>
+              <li>Ratings: 4.5 Stars, 26,477 ratings</li>
+              <li>Cost: $22.99 (on sale from $139.99)</li>
+            </ul>
             
-          <button id="btn-p" class="btn-p mypurple" onclick="myFunctionP()">Purple</button>
-          <button class="btn-y myyellow" onclick="myFunctionY()">Yellow</button>
-          <button class="btn-o myorange" onclick="myFunctionO()">Orange</button> 
-          <button class="btn-b myblue" onclick="myFunctionB()">Blue</button>
-          <!--button class="btn-x myx" onclick="myFunctionX()">Gray</button-->
+         
+            <h2>Requirements</h2>
+              <p>At a minimum, what you need to get started is your laptop (using Visual Studio Code on smaller devices may be too small!), an internet connection, a set of earbuds unless everyone around you is going to be doing the tutorial with you, a <a href="https://udemy.com">Udemy.com</a> account, and the course registration for $22.99 (normally $139.99). Brad Schiff will step you through all the rest.</p>
+            
+            <h2>Some of My Favorite Aspects</h2>
+              <p>In this tutorial, Brad is specific, concrete, and clear.</p>
+              <p>He starts out simple enough that even someone new to HTML will be able to follow along, but he handles important topics like Responsive Design from multiple angles and introduces popular 'tools' such as Bootstrap and Sass in such a straightforward way that it is fairly painless to set these up on your own machine and start working with them.</p>  
+              <p>As I was going through this tutorial, I made sample web pages on my laptop to test out each topic.  Typically starting from scratch or with pages done earlier, I used original photos, and the resource files for the lesson were there if I got stuck.  The result? A sampler of work that I can refer back to when I want to use it.</p>
+            <p><img class="img-basic" src="./images/lively header for faq page.jpg" alt="Fun header from FAQ page"></p>
+            <p>For example, a banner header like this was only one of many things the tutorial covered.</p>
+              <p>The great thing about an online tutorial is that you can pause, rewind, or even watch the video multiple times.  Udemy keeps track of all the rest and of course issues a certificate on completion.</p>
 
-        </div>  
-      </div>   <!-- /row -->
+              <h2>Development Environment & Tools</h2>
+                <p>
+                  <img class="img-basic" src="./images/vscode.jpg" alt="Visual Studio Code">
+                  <img class="img-basic" src="./images/element inspector.jpg" alt="Element Inspector">
+                </p>
+                <p>
+                  While Visual Studio Code is as familiar for many developers as their own livingroom, for some it may be new.  Brad lays out a basic path for setting up VSCode and setting up project pages in it.  He does this over and over as each new tool or concept is introduced - from installing the Sass Preprocessor to using Figma or Bootstrap - he will walk you through what you need to do.
+                </p>
+            <h2>Working with Images and Overlapping Content</h2>
+              <p><img class="img-basic" src="./images/transparent overlay on home page.jpg" alt="Transparent overlay on home page"></p>
+              <p>Working with overlapping content was one of my favorite 'recipes' from this tutorial.  Seen all over the web, great banners and transparent content give depth to a site, so this is rewarding to replicate!</p>
+            <h2>Vector Graphics (Figma) & Gradients</h2>
+              <p><img class="img-basic" src="./images/css sprites.jpg" alt="CSS Sprites explained"></p>            
+              <p>Brad covers vector graphics and gradients and introduces working with Figma.  CSS Sprites are explained - for example, this house turns blue when the cursor hovers over it.</p>
 
-      <div class="row">
-        <div class="col-md-12 mb-12 mb-md-0">
-          <h2>Resources:</h2>
-          <ul>
-            <li>Brad Schiff's udemy.com tutorial: "Web Design for Beginners: Real World Coding in HTML & CSS"</li>
+            <h2>Responsive Design</h2>
+                <img style="flex-wrap: wrap; height: 200px; width: auto; margin: 20px; border: 1px solid black;" src="./images/responsive design.jpg" alt="Cellphone example">
+                <p>Cellphones, Tablets, Laptops, and Desktops (and up).  Brad makes sense out of media queries, Mobile-First design, and an alternative that designs for the medium range devices (laptops) and scales up or down from there.</p>
+              </div>
 
-          </ul>
+            <h2>CSS Flexbox and Grid</h2>
+                <p><img class="img-basic" src="./images/flexbox.jpg" alt="Flexbox examples"></p>
+                <p>One thing I noticed about Brad's tutorials is that he updates them over time.  If a concept has been replaced by a better alternative, he will redo or amend that topic.  Flexbox is a good example where he circled back a number of years after originally making the lessons to update the methods for columns and rows to use a new and better approach: Flexbox!  To be honest, as a consumer this will keep me coming back because I trust that the content is being actively curated.</p>
 
-          <h2>Project:</h2>
-          <p class="text-left">Although I had been working with HTML and CSS in various projects, I wanted to see what this tutorial could show me that was new.  It is both a fantastic place to start for anyone interested in working with front-end development as well as a great way to branch into important topics such as grid systems, Bootstrap, and Sass.  While it doesn't require programming know-how, Schiff sets the stage for Javascript and explains why it is the third member of the 'happy family' along with HTML and CSS. I wish I had found this years ago when I first started working with HTML!  See the earlier HTML project here:  <a href="myhtml.html" class="btn btn-primary btn-lg">HTML Project</a></p>
+            <h2>CSS Transitions & Animations</h2>              
+              <div class="box-z-container">
+                <div class="col-z">
+                  <div class="box-z">
+                    <p>Key Feature 1</p>
+                  </div>
+                </div>
+              </div>
+              <p>This little example uses CSS animation to bounce (on page load) and spin (on hover).</p>
+
+            <h2>Bootstrap</h2>
+              <p><img class="img-basic" src="./images/bootstrap classes.jpg" alt="Bootstrap Classes"></p>
+              <p>Setting up Bootstrap was a straightforward process in this tutorial, and I liked being able to quickly get up to speed with the dev environment so I could start trying out the framework classes.  The accordion was one of my favorites!</p>
+
+            <h2>Sass</h2>
+              <p><img class="img-basic" src="./images/sass.jpg" alt="Sass Example"></p>
+              <p>Here again, stepping through the tutorial made setup a breeze and quickly got me up and running with Sass.  Brad explains mixins, how variables are used, the nested nature of Sass, and so much more.</p>
+
+            <h2>GitHub and GitHub Pages</h2>
+              <p><img class="img-basic" src="./images/GitHub Pages Example Site.jpg" alt="GitHub Pages Site - Example"></p>
+              <p>In this section, Brad walks users through setting up repositories, introduces the desktop app, and shows how to turn local pages into an online website through GitHub's public-facing and free 'Pages' hosting.  Great!</p>
+            <h2>Wrapping Up</h2>
+            <p>If you're looking for a great tutorial to brush up on your HTML & CSS skills, or if you want to take a step forward with some new-to-you technology such as Sass or Bootstrap, here's a way to up your game as a web developer.  I highly recommend <a href="https://udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css">Brad Schiff's tutorial</a>!  (Wish I had found this years ago!) See my earlier HTML project here:  <a href="myhtml.html" class="btn btn-primary btn-lg">HTML Project</a></p>
+          </div>
         </div>      
       </div> <!-- /row -->
       
