@@ -1,5 +1,5 @@
 .my-bg-photo {
-  background: url('images/banner-bg.jpg') no-repeat;
+  background: url("images/banner-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   background-color: #000;
-  opacity: .65;
+  opacity: 0.65;
 }
 
 .my-custom-container {
@@ -31,9 +31,19 @@
 }
 
 .my-drawing {
-  transition: all .33s ease-out;
+  transition: all 0.33s ease-out;
 }
 
 .my-drawing:hover {
   transform: scale(1.054) rotate(15deg);
+}
+
+/* Images */
+.img-basic {
+  width: 400px;
+  border: 1px solid black;
+}
+.img-100 {
+  width: 100px;
+  display: cover;
 }
