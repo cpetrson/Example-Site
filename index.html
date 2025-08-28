@@ -5,57 +5,49 @@
     <title>Example Site - CPeterson</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
     <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
-  <body>
-    <div class="my-bg-photo bg-secondary text-white py-5 text-center shadow">
-      <h1 class="display-4">Welcome!</h1>
-      <p class="lead mb-0">A GitHub repository of latest project samples.</p>
-    </div>
 
-    <div class="container my-custom-container pt-3">
-      <nav class="mb-3">
-        <ul class="nav nav-tabs justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mycss.html">CSS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ava.html">Nonprofit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="woo.html">WooCommerce</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mylamp.html">LAMP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="wp.html">WordPress</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="myhtml.html">HTML</a>
-          </li>
-        </ul>
-      </nav>
+  <body class="home">
+    <header class="site-header home">
 
-      <div class="row">
-        <div class="col-md-7">
-          <h1>Hi there!</h1>
-          <p class="lead">Check out this synopsis of some of my latest work and the technologies used.</p>
-          <p>This repository is where I describe samples of my latest projects, including the technologies they use. Notes on some of the main resources and sources for each project are included.</p>
-          <a href="about.html" class="btn btn-primary btn-lg">See My Projects</a>
-        </div>
-        <div class="col-md-5 text-center pt-5">
-          <img src="images/IMG_1387.jpg" class="my-drawing img-fluid" alt="A frog." />
-        </div>
+      <div class="site-header-container home">
+
+        <nav class="site-nav home myFadeIn">
+          <ul class="group">
+            <li class="nav-tab home"><a href="#">Home</a></li>
+            <li class="nav-tab home"><a href="about.html">About</a></li>
+            <li class="nav-tab home"><a href="cpsql.html">SQL</a></li>
+            <li class="nav-tab home"><a href="mycss.html">CSS</a></li>
+            <li class="nav-tab home"><a href="myhtml.html">HTML</a></li>
+            <li class="nav-tab home hide-small"><a href="mylamp.html">LAMP</a></li>
+            <li class="nav-tab home hide-small"><a href="wp.html">WordPress</a></li>
+            <li class="nav-tab home hide-small"><a href="ava.html">Nonprofit</a></li>
+            <li class="nav-tab home hide-small"><a href="woo.html">WooCommerce</a></li>
+          </ul>
+        </nav>
       </div>
+      <!-- /div.site-header-container -->
+    </header>
+
+    <div class="container home">
+
+      <div class="poster myFadeIn">
+
+        <div class="row">
+          <h1>Welcome!</h1>
+          <p class="lead">Example Site Project Portfolio</p>
+          <p>Web development encompasses many disciplines from "front end" styling and design with CSS, HTML, and JavaScript; to database theory, SQL, and interfaces; to "back end" technologies such as PHP, web servers, and the operating systems they run on.  This fascinating universe is known as Full Stack development and requires a working knowledge of various pieces and how they fit together.  Join me on a roadtrip through my experiences with these components!</p>
+          <a href="about.html" class="btn btn-lg btn-secondary">Next</a>
+        </div>
     </div>
 
-    <footer class="border-top mt-5 py-4 text-center text-muted small">
+      </div>
+  
+
+  </div>
+
+    <footer class="home text-center">
       <p>&copy; 2025 cpetrson</p>
     </footer>
 
