@@ -1,3 +1,9 @@
 What is new with this upload?
 
+
+9/29/25
+- New background photo for site
+- New page: Express app(s)
+- Updated menu for all pages to include Express app
+
 myhtml.html -- reworded intro sentences.

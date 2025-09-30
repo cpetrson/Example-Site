@@ -4,30 +4,27 @@ iframe {
   border: 2px solid slategray;
   border-radius: 7px;
   margin-bottom: 5px;
-  width: 100%; 
-  
+  width: 100%;
 }
-.myframe{
+.myframe {
   border: 2px solid slategray;
   border-radius: 7px;
   margin-bottom: 5px;
-  width: 100%; 
+  width: 100%;
   height: 50vh;
   overflow: hidden;
-  
 }
-.myframe img{
+.myframe img {
   border: 2px solid slategray;
   width: 100%;
 }
 
-.imgframe{
+.imgframe {
   margin-bottom: 5px;
-  width: 100%; 
+  width: 100%;
   overflow: hidden;
-  
 }
-.imgframe img{
+.imgframe img {
   width: 100%;
 }
 
@@ -40,16 +37,21 @@ iframe {
 }
 .myyellow {
   background-color: rgb(253, 242, 72);
-  border: 1px solid rgb(159,139,26);
+  border: 1px solid rgb(159, 139, 26);
 }
 .myblue {
-  background-color: rgb(0,122,204);
+  background-color: rgb(0, 122, 204);
 }
 .myx {
   background-color: slategray;
 }
 
-.btn-a, .btn-b, .btn-p, .btn-o, .btn-y, .btn-x {
+.btn-a,
+.btn-b,
+.btn-p,
+.btn-o,
+.btn-y,
+.btn-x {
   display: inline-block;
   padding: 15px;
   margin-right: 10px;
@@ -96,10 +98,30 @@ iframe {
 .btn-b {
   background-color: rgb(0, 122, 204); /* Fallback Color */
   background-color: -webkit-gradient(linear, left top, left bottom, from(white), to(rgb(0, 122 204)));
-  background-image: -webkit-linear-gradient(top, white, rgb(0,122,204)); /* Chrome 10 */
+  background-image: -webkit-linear-gradient(top, white, rgb(0, 122, 204)); /* Chrome 10 */
   background-image: -moz-linear-gradient(top, white, rgb(0, 122, 204)); /* FF3.6 */
   background-image: -ms-linear-gradient(top, white, rgb(0, 122, 204)); /* IE10 */
   background-image: -o-linear-gradient(top, white, rgb(0, 122, 204)); /* Opera 11. */
   background-image: linear-gradient(to bottom, white, rgb(0, 122, 204));
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr=white, EndColorStr=rgb(0, 122, 204));
+}
+
+// styles for Express project -- copying Word styles
+.a-plain {
+  text-decoration: none;
+  color: blue;
+}
+.img-center {
+  margin: 0 auto;
+}
+.title-bar {
+  margin: 20;
+  border-top: 3px solid lightblue;
+  border-bottom: 3px solid lightblue;
+  font-style: italic;
+  font-size: xx-large;
+}
+.my-h2 {
+  font-size: xx-large;
+  color: cadetblue;
 }

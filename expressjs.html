@@ -1,0 +1,251 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Express</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="my-bg-photo bg-secondary text-white py-5 text-center shadow">
+        <h1 class="display-4">Project: Express.js</h1>
+        <p class="lead mb-0">Tech Stack: MongoDB, Express.js, and Node</p>
+      </div>
+
+      <div class="container my-custom-container pt-3">
+        <!-- padding-top: 3rem -->
+        <nav class="mb-3">
+          <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="expressjs.html">Express</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cpsql.html">SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mycss.html">CSS</a>
+            </li>
+              <a class="nav-link" href="myhtml.html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mylamp.html">LAMP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wp.html">WordPress</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ava.html">Nonprofit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="woo.html">WooCommerce</a>
+            </li>
+            <li class="nav-item">
+          </ul>
+        </nav>
+      
+
+        <div class="row text-center">
+          <h1>Two Cloud-based Express.js Web Apps</h1>
+        </div>
+      
+        <div class="row m-5">
+          <p><strong>Interested in making a web app to deploy to the cloud for free?  It's doable! I did it.</strong></p>
+          <img class="img-basic img-center" src="images/TodoApp-cropped.jpg" alt="ToDo App header">
+        </div>
+
+        <div class="row m-5">
+          <h2 class="my-h2">Contents</h2>
+          <a href="#intro" class="a-plain">Intro</a>
+          <a href="#functionality" class="a-plain">Web App Functionality</a>
+          <a href="#architecture" class="a-plain">Architecture</a>
+          <a href="#deployment" class="a-plain">Cloud Deployment</a>
+          <a href="#security" class="a-plain">Security Topics</a>
+          <a href="#devenv" class="a-plain">Development Environment</a>
+          <a href="#conclusion" class="a-plain">Conclusion</a>
+          <a href="#resources" class="a-plain">Resources</a>
+        </div>
+      
+        <div class="row m-5">
+
+          <h2 class="my-h2" id="intro">Intro</h2>
+            <p>This is the story of two web apps: The first is a very simple proof-of-concept while the second is more robust and includes socket functionality for a chat feature.  Both use free MongoDB Atlas database access, Express.js, the Node JavaScript environment, and both are deployed with a free Render.com account and GitHub.</p> 
+            <p>Read on for an overview of each app and some notes on the MongoDB-Express-Node architecture involved!</p>
+
+          </div>
+      
+        <div class="row m-5">
+          <h2 class="my-h2" id="functionality">Web App Functionality</h2>
+            <p>Of the two web apps, the first is a simple To-Do app that stores ‘items’ for a To-Do list in a MongoDB collection and performs CRUD (create-read-update-delete) operations on the items.</p>
+
+          <h2 class="title-bar">Simple To-Do App</h2>
+            <img class="img-basic img-center" src="images/TodoApp.jpg" alt="ToDo App">
+
+          <p>This web app has: 
+            <div><ul>
+          <li>A simple response authorization prompt that provides security</li>
+            <li>1 page - 1 form - 1 field - 1 submit button</li>
+            <li>To the right of each task are edit and delete buttons where, as expected, clicking edit pops up a dialog box for entering changes, while clicking delete pops up an 'Are you sure?' prompt that results in a cancel or commit.</li>
+            <li>Simple functionality: enter a task in the field, click submit, and the task is added to the bottom of the list.</li>
+          </ul></div></p>
+            <p>Why start so simple? As a proof-of-concept, this app is database-connected, cloud-deployed, and built in the Node environment with Express.js.</p>
+
+          <h2 class="title-bar">Complex Web App</h2>
+            <p>The second app described below is a more complex implementation that provides Registration and Login, a Live Search feature, a Following/Followers/Feed mechanism, a socket-based Chat feature, and the standard (but text-only) Post creation/updating/deletion behavior experienced on social networking sites.  Additionally, emails can be sent on post creation or other transactional triggers.</p>
+          
+          <img class="img-basic img-center" src="images/registration-guest-home.jpg" alt="Registration page">
+          <p class="text-center">Registration/Login page where sessions/users are persisted to a MongoDB collection.</p>
+
+          <img class="img-basic img-center" src="images/home-dashboard with feed.jpg" alt="Home Dashboard">
+          <p class="text-center">Home page dashboard includes a user feed from followed accounts.</p>
+
+          <img class="img-basic img-center" src="images/chat.jpg" alt="Chat">
+          <p class="text-center">Chat feature implements socket.io library</p>
+
+          <img class="img-basic img-center" src="images/search-overlay-results.jpg" alt="Search overlay results">
+          <p class="text-center">Live Search overlay with test results</p>
+
+          <img class="img-basic img-center" src="images/profile - barksalot.jpg" alt="Profile page">
+          <p class="text-center">Profile page: Posts, Followers, Following Lists</p>
+
+          <img class="img-basic img-center" src="images/single-post.jpg" alt="Single Post page">
+          <p class="text-center"> Posts - Create, Read, Update, Delete</p>
+            
+          </div>
+      
+        <div class="row m-5">
+          <h2 class="my-h2" id="architecture">Architecture</h2>
+          <h3>MVC Architecture in a JavaScript Full Stack Web App</h3>
+          <p>The Complex App is structured using a Model-View-Controller (MVC) architecture:
+            <div><ul>
+          <li>Models: Post, User, Follow</li>
+          <li>Views: home-guest.ejs, home-dashboard.ejs, profile.ejs, 404.ejs, etc.</li>
+          <li>Controllers: postController, userController, followController</li>
+          <li>The Express app object and database object provide central logic and control.</li>
+          </ul></div></p>
+
+          <h3>Database Connections and Asynchronous Calls</h3>
+          <p>Database connection and calls are handled with asynchronous calls in the ‘Complex’ App.  Both the server and the client are interacting with the database:
+            <div><ul>
+          <li>On the client side, the Axios library provides database connectivity</li>
+          <li>On the server side, the mongodb and connect-mongo packages are used.</li>
+          </div></ul></p>
+
+          <p>The ‘dotenv’ package allows connection details to be held in one place, enabling clearer transfer between environments (for example when switching databases) and better security.
+          While Promises have largely replaced callback functions for asynchronous calls, there are still alternate approaches to be found in the then().catch() syntax and the async/await approach.  Below is an example of the async/await syntax from the app’s create post method.</p>
+          <p>Example async/await syntax with try{} and catch{} blocks:</p>
+          <div>
+            <pre>
+              Post.prototype.create = async function () {
+                this.cleanUp()
+                this.validate()
+                if (!this.errors.length) {
+                  // save post into database
+                  try {
+                    const info = await postsCollection.insertOne(this.data)
+                    return info.insertedId
+                  } catch (err) {
+                    this.errors.push("Please try again later.")
+                    throw this.errors
+                  }
+                } else {
+                  throw this.errors
+                }
+              }</pre>
+          </div>
+
+          <h3>Express Router </h3>
+          <p>Using the Express Router provides central control for managing app routes and flow as in the following call for creating a new post:
+            <code>
+          router.get("/create-post", userController.mustBeLoggedIn, postController.viewCreateScreen)</code></p>
+
+          <h3>Multi-Page (MPA) vs. Single-Page-Application (SPA)</h3>
+            <p>Initially, these are both Multi-Page architecture apps, however, it is possible to create SPA behavior by capturing the onclick and onblur events and rerender the intended destinations within the header and footer of the single page.  This can be easily tested when the chat box is up.  If the chat remains on ‘top’ when the user switches between internal ‘pages’ or routes, then it is an SPA structure, however, when the chat disappears on navigation, this reflects the MPA implementation.</p>
+
+          <h3>Adding SMTP/Mail Support</h3>
+          <p>Including the resend package and creating a new Resend object (initialized with the RESEND_API_KEY) provided a way to send emails after a successful post creation via the resend.emails.send() function.</p>
+          <p>I was not able to successfully create a free account with SendGrid, but was able to get an alternative to work using Resend.com's free account.  It was quick and intuitive:</p>
+          <div><ul>
+            <li>I created a free account with Resend </li>
+            <li>On their onboarding page, I clicked to create an API and waited (a bit long? < 10 min) </li>
+            <li>I copied that key, and in the .env file created a line that said 
+              <pre>RESENDAPIKEY=<insert your key here></pre></li>
+            <li>I ran npm install resend, and then restarted the app with npm run watch</li>
+            <li>In postController.com  (Yes, import would have been better, but was matching the coding style.)
+              <pre>
+                const { Resend } = require("resend")
+                const resend = new Resend(process.env.RESENDAPIKEY)
+              </pre>
+            </li>
+            <li>In the <code>exports.create</code> function add: 
+              <div><pre>
+        resend.emails.send({
+        from: "onboarding@resend.dev",
+        to: "<your receiving email address here>",
+        subject: "New Post",
+        html: "<p>Post was created <strong>successfully</strong>!</p>"
+      })</pre></div></li>
+    
+      </ul></div></div>
+      
+        <div class="row m-5">
+          <h2 class="my-h2" id="deployment">Cloud Deployment</h2>
+          <p>By saving the codebase in a GitHub repository, it could be easily pushed up onto render.com and deployed in a cloud-based environment: the MongoDB Atlas account is running on AWS servers, and both the server-side code and public client-side code are hosted on render.com.</p>
+
+          <p>The components involved were free options:
+            <div>
+          <ul>
+            <li>A Git/GitHub free account and private repository</li>
+            <li>A Render.com free account - for creating a new web service, from the dashboard, it was possible to log into GitHub with credentials and choose the repository.</li>
+            <li>A Mongodb Atlas free account
+              <ul>
+              <li>MongoDB is a NoSQL-type of database that uses clusters and collections.</li>
+              <li>Using a .env file to store the database string served two purposes: better security as well as portability when moving code to another environment.</li>
+              </ul></li>
+          </ul></div>
+
+            <img class="img-basic img-center" src="images/render-onWakeup.jpg" alt="Render.com wake up">
+          <p  class="text-center">Just a note on wake-up delays with the free account:  This can take 30+ seconds to ‘wake-up’ due to the free account.</p>
+
+
+          </div>
+      
+        <div class="row m-5">
+          <h2 class="my-h2" id="security">Security Topics</h2>
+          <p>There are a number of security topics to note with these projects.  </p>
+          <p><strong>User input sanitization and validation</strong> (both for registration/login and for post creation) is handled with both server-side and client-side code.  On the server side, sanitize-html is used in addition to field validation checks such as ‘username, email and password cannot be blank,’ ‘email format must be in the regular format,’ and ‘minimum and maximum lengths for field entries enforced.’  Database checks are also performed to ensure that username and emails are unique.  Client-side Axios database checks provide a second layer of validation, and DOMPurify is also used.</p>
+          <p><strong>.env file usage</strong>, supported by the dotenv package, provides security for database connection strings and other logins or API keys such as the resend API key.</p>
+          <p><strong>Using sameSite: “strict” session settings</strong> addresses the cross-site request forgery concerns for which the deprecated Express csurf package had been formerly used.</p>
+          <p><strong>The posts are all public</strong>, so that logged in users can search on topics of interest and ‘follow’ users whose content they want.  Implementing further security or privacy for posts would involve adding privacy settings.</p>
+
+          </div>
+      
+        <div class="row m-5">
+          <h2 class="my-h2" id="devenv">Development Environment</h2>
+          <p>In addition to Visual Studio Code with GitHub, Nodemon and Webpack were used to bundle and automate the process.</p>
+
+          </div>
+
+        <div class="row m-5">
+          <h2 class="my-h2" id="conclusion">Conclusion</h2>
+            <p>Worth every bit of effort, these two web apps provide the cloud-based JavaScript Full-Stack experience (using Express.js) <em>before</em> using JavaScript Frameworks such as React, Angular, or Vue.  Building them gives a familiarity with the full stack ecosystem of JavaScript on both the client and server sides, using Webpack to bundle, MongoDB as a database, and cloud-based options to deploy.  A great proof-of-concept to build on, whether the next step is a JavaScript framework or full stack JavaScript!</p>
+          </div>
+      
+        <div class="row m-5">
+          <h2 class="my-h2" id="resources">Resources</h2>
+          <ul>
+            <li>Brad Schiff’s <a href="https://www.udemy.com/course/learn-javascript-full-stack-from-scratch">JavaScript Full Stack from Scratch</a> Tutorial on <a href="https://udemy.com">Udemy.com</a></li>
+            <li><a href="https://www.markdownguide.org/cheat-sheet/">MarkDown Guide</a></li>
+            <li><a href="https://expressjs.com/2024/10/15/v5-release.html">Express.js v 5</a> </li>
+            <li><a href="https://postman.com">Postman</a> (used for testing request/response parameters)</li>
+          </ul>
+        </div> <!-- /row -->
+      </div> <!-- /my-custom-container -->
+    </div> <!-- /page-container -->
